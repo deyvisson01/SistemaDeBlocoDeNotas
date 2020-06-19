@@ -1,0 +1,19 @@
+SRC=src
+BIN=bin
+LIB=lib
+
+SERVERFOLDER=server
+
+FILEMAINSERVER=server
+
+BACKUPFOLDER=FinalProject_Bulletin_Occurrence
+
+all: $(SERVERFOLDER)/$(FILEMAINSERVER).py
+		
+
+clean: $(SERVERFOLDER)/$(FILEMAINSERVER).py	
+		
+
+server: $(SERVERFOLDER)/$(FILEMAINSERVER).py
+		python3 $(SERVERFOLDER)/$(FILEMAINSERVER).py
+
